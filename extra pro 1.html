@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa's Portfolio - Web Designer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 40px;
+            font-size: 3em;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 1.5em;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .skill-bar {
+            width: 80%;
+            background: lightgrey;
+            border-radius: 10px;
+            margin: 20px auto;
+            height: 20px;
+            position: relative;
+        }
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            background: darkorange;
+            width: 90%;
+            border-radius: 10px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .floating-text {
+            position: absolute;
+            animation: float 5s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .bubble-section {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .bubble {
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            bottom: -50px;
+            animation: bubbleFloat 5s infinite ease-in;
+        }
+        @keyframes bubbleFloat {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-300px); opacity: 0; }
+        }
+        .testimonial {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+.contact {
+    margin-top: 50px;
+    text-align: center;
+}
+.contact a {
+    color: lightblue;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.contact-section {
+            text-align: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+.contact-link {
+            color: darkorange;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 20px;
+            display: inline-block;
+            padding: 15px 30px;
+            border: 2px solid darkorange;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>Musa - Expert Web Designer</header>
+    <div class="container">
+        <section class="hero">
+            <p>Hi, I'm Musa, a passionate and highly skilled web designer with a deep love for crafting visually stunning and user-friendly websites.</p>
+        </section>
+        <!-- <section>
+            <h2>My Skills</h2>
+            <div class="skill-bar"><span></span></div>
+        </section> -->
+        <section class="bubble-section">
+          <div class="bubble" style="left: 10%; animation-duration: 4s;"></div>
+          <div class="bubble" style="left: 40%; animation-duration: 6s;"></div>
+          <div class="bubble" style="left: 70%; animation-duration: 5s;"></div>
+          <section>
+              <h2>My Projects</h2>
+              <div class="projects">
+                  <div class="project-card">Project 1: Stunning Portfolio Website</div>
+                  <div class="project-card">Project 2: E-commerce Website</div>
+                  <div class="project-card">Project 3: Modern Blog Platform</div>
+                  <div class="project-card">Project 4: Custom UI Components</div>
+              </div>
+          </section>
+      </section>
+    </div>
+    <section class="testimonial">
+        <p>"Musa is an exceptional web designer! His work is creative, professional, and cutting-edge." - Client</p>
+    </section>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:musa@example.com">musa@example.com</a></p>
+    </section>
+</body>
+<section class="contact-section">
+    <h2>Create with Me</h2>
+    <a href="mailto:musa@example.com" class="contact-link">Start a Project</a>
+    <a href="#portfolio" class="contact-link">View Full Portfolio</a>
+</section>
+</html>
